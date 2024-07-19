@@ -1,0 +1,26 @@
+@use 'sass:math';
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == sm {
+        @media (min-width: $breakpoint-sm) { @content; }
+    } @else if $breakpoint == md {
+        @media (min-width: $breakpoint-md) { @content; }
+    } @else if $breakpoint == lg {
+        @media (min-width: $breakpoint-lg) { @content; }
+    } @else if $breakpoint == xl {
+        @media (min-width: $breakpoint-xl) { @content; }
+    } @else if $breakpoint == xxl {
+        @media (min-width: $breakpoint-xxl) { @content; }
+    }
+}
+
+@mixin fluid-type($min-font-size, $max-font-size, $min-viewport-width, $max-viewport-width) {
+    font-size: clamp(#{$min-font-size}, calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-viewport-width}) / #{strip-unit($max-viewport-width - $min-viewport-width)})), #{$max-font-size});
+}
+
+@function strip-unit($value) {
+    @return math.div($value, $value * 0 + 1);
+}
+
+@mixin transition($properties...) {
+    transition: $properties $transition-duration ease;
+  }

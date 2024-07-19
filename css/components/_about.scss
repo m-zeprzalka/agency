@@ -1,0 +1,25 @@
+.about {
+    margin: 4rem auto;
+    @include respond-to(lg){
+        margin: 8rem auto;
+    }
+    ul {
+        margin: $spacing-unit * 2 auto;
+        li {
+            font-weight: $bold-font-weight;
+            margin: $spacing-unit auto;
+        }
+    }
+    .container {
+        @include respond-to(lg) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $spacing-unit * 2;
+        }
+        @include respond-to(xl) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $spacing-unit * 2;
+        }
+    }
+}

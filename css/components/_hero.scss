@@ -1,0 +1,27 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-third;
+    border-radius: 0 0 $spacing-unit $spacing-unit;
+    &__content {
+        text-align: center;
+        margin: 2rem auto;
+        @include respond-to(md) {
+            margin: 2rem auto;
+        }
+    }
+    &__title {
+        margin-bottom: 1rem;
+    }
+    &__description {
+        margin: 2rem auto;
+        max-width: 65ch;
+    }
+    video{
+        @include respond-to(xl) {
+            margin-bottom: 2rem;
+        }
+    }
+}

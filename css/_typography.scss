@@ -1,0 +1,23 @@
+body {
+    @include fluid-type(18px, 20px, $breakpoint-sm, $breakpoint-xl);
+    line-height: 1.7; 
+}
+
+h1 {
+    @include fluid-type(32px, 72px, $breakpoint-sm, $breakpoint-xl);
+    font-family: $font-family-second;
+    line-height: 1.2;
+}
+
+h2 {
+    @include fluid-type(30px, 48px, $breakpoint-sm, $breakpoint-xl);
+    font-family: $font-family-second;
+    font-weight: $bold-font-weight;
+    line-height: 1.2;
+    margin-bottom: $spacing-unit * 2;
+}
+
+h3 {
+    @include fluid-type(24px, 28px, $breakpoint-sm, $breakpoint-xl);
+    line-height: 1.4;
+}

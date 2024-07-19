@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nazwa.agencji - Content Marketing w abonamencie</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__logo">agency.agency</a>
+                <button class="header__toggle" aria-label="Toggle menu">☰</button>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="header__menu-item"><a href="#about">Dlaczego warto?</a></li>
+                    <li class="header__menu-item"><a href="#faq">Najczęstsze pytania</a></li>
+                </ul>
+                <div class="header__cta">
+                    <a href="#" class="button button--secondary">Zamów Pakiet</a>
+                    <a href="#" class="button button--primary">Kontakt</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--header-end-->
+    <!--main-->
+    <main>
+        <!--hero-->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Content Marketing<br> w abonamencie</h1>
+                    <p class="hero__description">Stała miesięczna opłata za profesjonalne realizacje Content Marketing
+                        oraz
+                        zarządzanie Twoją treścią w Internecie. Elastyczność, którą docenisz!</p>
+                    <a href="#prices" class="hero__cta button button--primary">Zobacz cennik</a>
+                </div>
+                <video class="hero__video" autoplay muted loop playsinline>
+                    <source src="img/hero.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <!--hero-end-->
+        <!--portfolio-->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/orlen.mp4" type="video/mp4">
+                        </video>
+                        <h3>Orlen - Landing Page dla akcji "Mistrzowie podwórek"</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/banana-socks-min.mp4" type="video/mp4">
+                        </video>
+                        <h3>Spoty reklamowe Banana Socks</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/content-sport.mp4" type="video/mp4">
+                        </video>
+                        <h3>Content dla brandów sportowych</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/cellove.mp4" type="video/mp4">
+                        </video>
+                        <h3>Cellove - spot reklamowy</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/innowator.mp4" type="video/mp4">
+                        </video>
+                        <h3>Innowator Mazowsza - Obsługa akcji Content Marketing & Landing Page</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--portfolio-end-->
+        <!--about-->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about_content">
+                    <h2>Zlecaj usługi jedna po drugiej, dzięki stałej subskrypcji</h2>
+                    <p>Zazwyczaj otrzymasz treści w ciągu dwóch dni roboczych. W zależności od stopnia skomplikowania
+                        projektu, realizacja może być gotowa od razu lub może wymagać kilku dodatkowych dni. Będziemy
+                        pracować nad projektem, aż będziesz w pełni zadowolony!</p>
+                    <ul>
+                        <li>Zredukujesz wydatki na marketing w Twojej firmie</li>
+                        <li>Otrzymasz kreatywne i techniczne wsparcie Twojego działu marketingu</li>
+                        <li>W prosty sposób będziesz zarządzać swoimi projektami za pomocą tablicy Trello</li>
+                    </ul>
+                </div>
+                <video autoplay muted loop playsinline>
+                    <source src="img/content-sport.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <!--about-end-->
+        <!-- prices -->
+        <section class="prices" id="prices">
+            <div class="container">
+                <div class="prices__header">
+                    <h2>Wybierz swój plan rozliczeniowy</h2>
+                </div>
+                <div class="prices__cards">
+                    <ul class="prices__list">
+                        <!-- Price Item -->
+                        <li class="prices__item">
+                            <h3 class="prices__title">Optimal</h3>
+                            <span class="prices__subtitle">1 projekt w tym samym czasie</span>
+                            <div class="prices__divider"></div>
+                            <h4 class="prices__amount">PLN 4900<span class="prices__frequency">/ mies.</span></h4>
+                            <ul class="prices__features">
+                                <li class="prices__feature">Średni czas realizacji zlecenia 48h</li>
+                                <li class="prices__feature">Nieograniczona liczba marek</li>
+                                <li class="prices__feature">Podstawowa obsługa Foto/Video (2 wizyty w miesiącu)</li>
+                                <li class="prices__feature">Minimum 20h pracy w miesiącu nad Twoimi projektami</li>
+                            </ul>
+                            <a href="pricing.html" class="button button--secondary">Wybierz plan</a>
+                        </li>
+                        <!-- Price Item -->
+                        <li class="prices__item">
+                            <h3 class="prices__title">Pro</h3>
+                            <span class="prices__subtitle">2 projekty realizowane w tym samym czasie</span>
+                            <div class="prices__divider"></div>
+                            <h4 class="prices__amount">PLN 7900<span class="prices__frequency">/ mies.</span></h4>
+                            <ul class="prices__features">
+                                <li class="prices__feature">Średni czas realizacji 48h</li>
+                                <li class="prices__feature">Nieograniczona liczba marek</li>
+                                <li class="prices__feature">Pro obsługa Foto/Video (4 wizyty w miesiącu / priorytetowe
+                                    terminy / zaawansowany sprzęt 4k)</li>
+                                <li class="prices__feature">Minimum 35h pracy w miesiącu nad Twoimi projektami</li>
+                            </ul>
+                            <a href="pricing.html" class="button button--secondary">Wybierz plan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--prices-end-->
+        <!-- faq-->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="faq__about">
+                    <div class="faq__header">
+                        <h2>Najczęściej zadawane pytania</h2>
+                        <p>Dbamy o Twój czas i chcemy, abyś nie musiał tracić cennych godzin na zarządzanie contentem w
+                            mediach społecznościowych. Automatyzujemy Twoje działania online, aby były jak najbardziej
+                            efektywne. Poznaj kluczowe informacje o naszej usłudze.</p>
+                        <a href="#contact" class="button button--primary">Wyślij zapytanie</a>
+                    </div>
+                    <div class="faq__content">
+                        <ul class="faq__list">
+                            <li class="faq__item">
+                                <div class="faq__question">
+                                    <p>Czy nie lepiej zatrudnić kogoś na do swojej firmy?</p>
+                                    <div class="faq__icon">
+                                        <p>+</p>
+                                    </div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>Zatrudnienie projektanta graficznego na pełny etat może być kosztowne, nawet
+                                        ponad
+                                        120 000 zł rocznie, w zależności od jego doświadczenia. Dodatkowo, przy bardziej
+                                        skomplikowanych projektach, takich jak fotografie, filmy czy strony internetowe,
+                                        będziesz musiał zatrudniać podwykonawców.</p>
+                                    <p>Wybierz kompleksową usługę, która w skali roku będzie zdecydowanie tańsza.
+                                        Większość
+                                        prac wykonujemy zdalnie na podstawie zleconych zadań. Możesz w każdej chwili
+                                        wstrzymać współpracę, płacisz tylko za to, co otrzymujesz.</p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <div class="faq__question">
+                                    <p>Czy są zlecenia, których nie wykonujecie?</p>
+                                    <div class="faq__icon">
+                                        <p>+</p>
+                                    </div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>Wykonujemy większość projektów z branży multimedialnej: foto, wideo, grafika,
+                                        motion
+                                        design, web design. Jednak w ramach preferencyjnych warunków abonamentowych,
+                                        ograniczyliśmy pewne usługi. Nie obejmują one autorskich projektów 3D (możemy
+                                        korzystać z gotowych obiektów), skomplikowanego składu do druku, takiego jak
+                                        magazyny, czasopisma, broszury informacyjne i opakowania.</p>
+                                    <p>Najlepiej będzie jeżeli, najpierw napiszesz nam czego potrzebujesz,
+                                        przenalizujemy
+                                        Twoje potrzeby i wyślemy Ci propozycję współpracy.</p>
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <div class="faq__question">
+                                    <p>Czy istnieje limit, ile mogę mieć zleceń?</p>
+                                    <div class="faq__icon">
+                                        <p>+</p>
+                                    </div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>Po wykupieniu pakietu możesz dodawać dowolną liczbę zleceń do swojej kolejki.
+                                        Będziemy realizować je jedno po drugim.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--faq-end-->
+        <!--contact-->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__content">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/content-sport.mp4" type="video/mp4">
+                    </video>
+                    <div class="contact__about">
+                        <h2 class="contact__header">Wyślij zapytanie odpiszemy w przeciągu 24h z gotową propozycją</h2>
+                        <p class="contact__description">
+                            Znajdźmy najlepsze rozwiązanie odpowiadające Twoim potrzebom. Podczas rozmowy omówimy
+                            szczegóły
+                            realizacji zlecenia i wstępnie potwierdzimy możliwość wykonania Twojego projektu.
+                        </p>
+                        <ul class="contact__details">
+                            <li class="contact__detail">
+                                Email: <a href="mailto:info@nazwa.pl" class="contact__link">info@agency.agency</a>
+                            </li>
+                            <li class="contact__detail">
+                                Phone: <a href="tel:508108767" class="contact__link">508-108-767</a> / <a
+                                    href="tel:668184614" class="contact__link">668-184-614</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact-end-->
+    </main>
+    <!--main-end-->
+    <footer class="footer">
+        <div class="footer__content">
+            <p>Rafał Chwalczuk & Michał Zeprzałka</p>
+            <p>2024</p>
+        </div>
+    </footer>
+    <script src="js/animations.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>

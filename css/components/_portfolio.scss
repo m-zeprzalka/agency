@@ -1,0 +1,27 @@
+.portfolio {
+    @include respond-to(xl) {
+        margin-top: 2rem;
+    }
+    &__list {
+        list-style: none;
+        columns: 1;
+        break-inside: avoid;
+        @include respond-to(md) {
+            columns: 2;
+            column-gap: $spacing-unit;
+        }
+        @include respond-to(xl) {
+            columns: 2;
+            column-gap: $spacing-unit * 2;
+        }
+    }
+    &__item {
+        margin-bottom: $spacing-unit;
+        display: inline-block;
+        break-inside: avoid;
+        width: 100%;
+    }
+    video{
+        margin-bottom: $spacing-unit;
+    }
+}
